@@ -1,7 +1,7 @@
 # Övningsprojekt – DS3231 Clock with OLED & NeoPixel Ring  
 
 ### Author  
-**Elis Jonsson**  
+**E J**  
 *Date: 2025-10-09*  
 
 ---

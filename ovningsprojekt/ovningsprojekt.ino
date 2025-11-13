@@ -44,7 +44,7 @@ int direction = 1;
 
 // Global variables: Misc
 const char* daysOfTheWeek[7] = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
-const bool led_on = false;
+const bool led_on = true;
 bool drawClock = true;
 int delayCounter = 0;
 
@@ -99,7 +99,7 @@ void loop() {
  */
 String getDay() {
   DateTime now = rtc.now();
-  String dayStr = daysOfTheWeek[now.dayOfTheWeek()]) + " " + String(now.day());
+  String dayStr = String(daysOfTheWeek[now.dayOfTheWeek()]) + " " + String(now.day());
   String monthStr = String(now.month());
   String yearStr = String(now.year());
   return String(dayStr + "/" + monthStr + "/" + yearStr);
